@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/dai1254473705/gql-demo/issues"
   },
-  "homepage": "https://github.com/dai1254473705/gql-demo#readme",
+  "homepage": "/",
   "dependencies": {
     "graphiql": "^1.4.2",
     "graphql": "^15.5.1",
