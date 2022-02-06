@@ -6,7 +6,22 @@ const { buildSchema } = require('graphql');
 const { graphqlHTTP } = require('express-graphql');
 const express = require('express');
 const app = express();
-
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+  host     : '127.0.0.1',
+  user     : 'daiyunzhou',
+  password : 'daiyunzhou',
+  database : 'hope'
+});
+ 
+connection.connect(function(err) {
+  if (err) {
+    console.error('error connecting: ' + err.stack);
+    return;
+  }
+ 
+  console.log('connected as id ' + connection.threadId);
+});
 /**
  * schema
  */
